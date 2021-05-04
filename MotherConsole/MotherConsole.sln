@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29905.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotherConsole", "MotherConsole\MotherConsole.csproj", "{17C9F54C-7C2C-40C7-AF17-75D1EEFB6E05}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeleNSum", "MotherConsole\PrimeleNSum.csproj", "{17C9F54C-7C2C-40C7-AF17-75D1EEFB6E05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MariSiPari", "MariSiPari\MariSiPari.csproj", "{A46A1F44-5ED7-4E74-BE9B-C85A819C62B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operatori", "Operatori\Operatori.csproj", "{EC6A0676-5E88-460F-928D-9277A7EA0ECB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{17C9F54C-7C2C-40C7-AF17-75D1EEFB6E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17C9F54C-7C2C-40C7-AF17-75D1EEFB6E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17C9F54C-7C2C-40C7-AF17-75D1EEFB6E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46A1F44-5ED7-4E74-BE9B-C85A819C62B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46A1F44-5ED7-4E74-BE9B-C85A819C62B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46A1F44-5ED7-4E74-BE9B-C85A819C62B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46A1F44-5ED7-4E74-BE9B-C85A819C62B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6A0676-5E88-460F-928D-9277A7EA0ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6A0676-5E88-460F-928D-9277A7EA0ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6A0676-5E88-460F-928D-9277A7EA0ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6A0676-5E88-460F-928D-9277A7EA0ECB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

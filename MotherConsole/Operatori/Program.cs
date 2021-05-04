@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MotherConsole
+namespace Program
 {
-    class Operatori
+    class Program
     {
         public double GetSum(double a, double b)
         {
@@ -28,23 +28,25 @@ namespace MotherConsole
             return a * b;
         }
 
-        static void Main(string[] args)
-        {
+        static void Main(string[] args{
+
+
+
             Console.Write("Insert first number: ");
             var firstNo = Convert.ToDouble(Console.ReadLine());
             Console.Write("Insert second number: ");
             var secondNo = Convert.ToDouble(Console.ReadLine());
 
-            Operatori sum = new Operatori();
+            Program sum = new Program();
             Console.WriteLine(firstNo + " + " + secondNo + " = " + sum.GetSum(firstNo, secondNo));
 
-            Operatori differenceAB = new Operatori();
+            Program differenceAB = new Program();
             Console.WriteLine(firstNo + " - " + secondNo + " = " + differenceAB.GetDifferenceAB(firstNo, secondNo));
 
-            Operatori differenceBA = new Operatori();
+            Program differenceBA = new Program();
             Console.WriteLine(secondNo + " - " + firstNo + " = " + differenceBA.GetDifferenceBA(firstNo, secondNo));
 
-            Operatori product = new Operatori();
+            Program product = new Program();
             Console.WriteLine(secondNo + " * " + firstNo + " = " + product.GetProduct(firstNo, secondNo));
 
             Console.ReadLine();
@@ -53,5 +55,10 @@ namespace MotherConsole
             // dati mesaj daca introduce altceva decat numar si cereti sa va dea din nou numarul
 
         }
+    }
+    }
+
+
+}
     }
 }
