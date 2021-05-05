@@ -13,12 +13,12 @@ namespace MotherConsole
             Console.Write("Insert the number of numbers: ");
             var number = Convert.ToInt32(Console.ReadLine());
             int suma = 0;
-            int [] a = new int[number];
-            for (int i=0; i<=a.Length; i++)
+            for (int i=1; i<=number; i++)
             {
-                suma = suma + a[i];
+                suma = suma + i;
             }
             Console.Write("The sum of the first " + number + " numbers is: " + suma);
+            Console.ReadLine();
         }
     }
 }
