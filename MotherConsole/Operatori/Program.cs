@@ -32,38 +32,47 @@ namespace Program
         {
             int valFromFirstNo, valFromSecondNo;
 
-            Console.Write("Insert first number: ");
-            var firstNo = Console.ReadLine();
-
             bool conversionIsSuccessful1, conversionIsSuccessful2;
-            conversionIsSuccessful1 = int.TryParse(firstNo, out valFromFirstNo);
+            
+            do {
+                Console.Write("Insert first number: ");
+                var firstNo = Console.ReadLine();
 
-            Console.Write("Insert second number: ");
-            var secondNo = Console.ReadLine();
+                conversionIsSuccessful1 = int.TryParse(firstNo, out valFromFirstNo);
 
-            conversionIsSuccessful2 = int.TryParse(secondNo, out valFromSecondNo);
+                if (conversionIsSuccessful1 == false)
+                {
+                    Console.WriteLine("The data you have inserted is not a number! Please, try again. ");
+                }
+            } while (conversionIsSuccessful1 == false) ;
 
-            while (conversionIsSuccessful1 == false || conversionIsSuccessful2 == false)
-            {
-                Console.Write("The data you have inserted is not a number! Please, try again. ");
-            }
+            
+
+            do {
+                Console.Write("Insert second number: ");
+                var secondNo = Console.ReadLine();
+
+                conversionIsSuccessful2 = int.TryParse(secondNo, out valFromSecondNo);
+
+                if (conversionIsSuccessful2 == false)
+                {
+                    Console.WriteLine("The data you have inserted is not a number! Please, try again. ");
+                }
+            } while (conversionIsSuccessful2 == false);
 
             Program sum = new Program();
-            Console.WriteLine(firstNo + " + " + secondNo + " = " + sum.GetSum(valFromFirstNo, valFromSecondNo));
+            Console.WriteLine(valFromFirstNo + " + " + valFromSecondNo + " = " + sum.GetSum(valFromFirstNo, valFromSecondNo));
 
             Program differenceAB = new Program();
-            Console.WriteLine(firstNo + " - " + secondNo + " = " + differenceAB.GetDifferenceAB(valFromFirstNo, valFromSecondNo));
+            Console.WriteLine(valFromFirstNo + " - " + valFromSecondNo + " = " + differenceAB.GetDifferenceAB(valFromFirstNo, valFromSecondNo));
 
             Program differenceBA = new Program();
-            Console.WriteLine(secondNo + " - " + firstNo + " = " + differenceBA.GetDifferenceBA(valFromFirstNo, valFromSecondNo));
+            Console.WriteLine(valFromSecondNo + " - " + valFromFirstNo + " = " + differenceBA.GetDifferenceBA(valFromFirstNo, valFromSecondNo));
 
             Program product = new Program();
-            Console.WriteLine(secondNo + " * " + firstNo + " = " + product.GetProduct(valFromFirstNo, valFromSecondNo));
+            Console.WriteLine(valFromSecondNo + " * " + valFromFirstNo + " = " + product.GetProduct(valFromFirstNo, valFromSecondNo));
 
             Console.ReadLine();
-
-            //validati ca ce introduce userul de la tastatura este intr-adevar un numar
-            // dati mesaj daca introduce altceva decat numar si cereti sa va dea din nou numarul
         }
     }
 }
