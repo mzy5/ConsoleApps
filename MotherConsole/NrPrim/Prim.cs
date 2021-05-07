@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NrPrim
 {
-    class Program
+    class Prim
     {
         public static bool GetPrim(int number)
         {

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D1206C67-AB3D-4650-911F-8C56972CD4E9}</ProjectGuid>
+    <ProjectGuid>{92915339-8937-463C-AA1B-A6B773919F60}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>NrPrim</RootNamespace>
-    <AssemblyName>NrPrim</AssemblyName>
+    <RootNamespace>PrimeN</RootNamespace>
+    <AssemblyName>PrimeN</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Prim.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NrPrim\NrPrim.csproj">
+      <Project>{d1206c67-ab3d-4650-911f-8c56972cd4e9}</Project>
+      <Name>NrPrim</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
