@@ -8,7 +8,7 @@ namespace PrimeN
 {
     class Program
     {
-        public static bool GetPrim(int number)
+        public static bool IsPrime(int number)
         {
             if (number < 2)
             {
@@ -36,7 +36,7 @@ namespace PrimeN
 
             for (int i = 2; i <= number; i++)
             {
-                if (GetPrim(i) == true)
+                if (IsPrime(i) == true)
                 {
                     Console.Write("The number " + i + " is prime");
                 }

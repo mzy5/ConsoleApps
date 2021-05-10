@@ -18,24 +18,19 @@ namespace Program
             return a - b;
         }
 
-        public double GetDifferenceBA(double a, double b)
-        {
-            return b - a;
-        }
-
         public double GetProduct(double a, double b)
         {
             return a * b;
         }
 
-        static void Main(string[] args)
+        public static int getNumber()
         {
-            int valFromFirstNo, valFromSecondNo;
 
-            bool conversionIsSuccessful1, conversionIsSuccessful2;
-            
-            do {
-                Console.Write("Insert first number: ");
+            int valFromFirstNo;
+            bool conversionIsSuccessful1;
+
+            do
+            {
                 var firstNo = Console.ReadLine();
 
                 conversionIsSuccessful1 = int.TryParse(firstNo, out valFromFirstNo);
@@ -44,21 +39,20 @@ namespace Program
                 {
                     Console.WriteLine("The data you have inserted is not a number! Please, try again. ");
                 }
-            } while (conversionIsSuccessful1 == false) ;
+            } while (conversionIsSuccessful1 == false);
 
-            
+            return valFromFirstNo;
+        }
 
-            do {
-                Console.Write("Insert second number: ");
-                var secondNo = Console.ReadLine();
+        static void Main(string[] args)
+        {
+            int valFromFirstNo, valFromSecondNo;
 
-                conversionIsSuccessful2 = int.TryParse(secondNo, out valFromSecondNo);
+            Console.Write("Insert first number: ");
+            valFromFirstNo = getNumber();
 
-                if (conversionIsSuccessful2 == false)
-                {
-                    Console.WriteLine("The data you have inserted is not a number! Please, try again. ");
-                }
-            } while (conversionIsSuccessful2 == false);
+            Console.Write("Insert second number: ");
+            valFromSecondNo = getNumber();
 
             Program sum = new Program();
             Console.WriteLine(valFromFirstNo + " + " + valFromSecondNo + " = " + sum.GetSum(valFromFirstNo, valFromSecondNo));
@@ -67,7 +61,7 @@ namespace Program
             Console.WriteLine(valFromFirstNo + " - " + valFromSecondNo + " = " + differenceAB.GetDifferenceAB(valFromFirstNo, valFromSecondNo));
 
             Program differenceBA = new Program();
-            Console.WriteLine(valFromSecondNo + " - " + valFromFirstNo + " = " + differenceBA.GetDifferenceBA(valFromFirstNo, valFromSecondNo));
+            Console.WriteLine(valFromSecondNo + " - " + valFromFirstNo + " = " + differenceBA.GetDifferenceAB(valFromSecondNo, valFromFirstNo));
 
             Program product = new Program();
             Console.WriteLine(valFromSecondNo + " * " + valFromFirstNo + " = " + product.GetProduct(valFromFirstNo, valFromSecondNo));

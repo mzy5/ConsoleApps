@@ -22,7 +22,7 @@ namespace Divizori
                     Console.Write(i + "; ");
                 }
                 i++;
-            } while (i <= number);
+            } while (i <= number/2);
 
             Console.ReadLine();
         }

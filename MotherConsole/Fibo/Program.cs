@@ -8,23 +8,29 @@ namespace Fibo
 {
     class Program
     {
+        public static int Fibo(int n)
+        {
+            if (n == 0)
+            {
+                return 0;
+            }
+
+            if (n==1)
+            {
+                return 1;
+            }
+
+            return Fibo(n - 1) + Fibo(n - 2);
+        }
+
         static void Main(string[] args)
         {
             Console.Write("Insert n: ");
             var n = Convert.ToInt32(Console.ReadLine());
 
-            int[] a = new int[n];
-            a[0] = 0;
-            a[1] = 1;
+            int result = Fibo(n);
 
-            Console.Write("The numbers are: ");
-            Console.Write(a[0] + "; ");
-            Console.Write(a[1] + "; ");
-            for (int i = 2; i <= n; i++)
-            {
-                int number = a[i - 1] + a[i - 2];
-                Console.Write(number + "; ");
-            }
+            Console.Write(result);
             Console.ReadLine();
         }
     }
