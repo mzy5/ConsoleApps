@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divizori", "Divizori\Divizo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibo", "Fibo\Fibo.csproj", "{0F00BE8A-9A50-453E-9701-94A41D0E8566}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargerThanHundred", "LargerThanHundred\LargerThanHundred.csproj", "{E127B69C-494C-43C7-9BB0-96CC81F9F5B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binar", "Binar\Binar.csproj", "{58D1544E-1197-4154-824F-AC57B4F7F4BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{0F00BE8A-9A50-453E-9701-94A41D0E8566}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F00BE8A-9A50-453E-9701-94A41D0E8566}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F00BE8A-9A50-453E-9701-94A41D0E8566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E127B69C-494C-43C7-9BB0-96CC81F9F5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E127B69C-494C-43C7-9BB0-96CC81F9F5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E127B69C-494C-43C7-9BB0-96CC81F9F5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E127B69C-494C-43C7-9BB0-96CC81F9F5B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D1544E-1197-4154-824F-AC57B4F7F4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D1544E-1197-4154-824F-AC57B4F7F4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D1544E-1197-4154-824F-AC57B4F7F4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D1544E-1197-4154-824F-AC57B4F7F4BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
