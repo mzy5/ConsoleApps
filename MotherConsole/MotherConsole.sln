@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargerThanHundred", "Larger
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binar", "Binar\Binar.csproj", "{58D1544E-1197-4154-824F-AC57B4F7F4BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstract", "Abstract\Abstract.csproj", "{8EE34A22-F0C5-4A8F-B54B-DE760E90DB61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{58D1544E-1197-4154-824F-AC57B4F7F4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58D1544E-1197-4154-824F-AC57B4F7F4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58D1544E-1197-4154-824F-AC57B4F7F4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE34A22-F0C5-4A8F-B54B-DE760E90DB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE34A22-F0C5-4A8F-B54B-DE760E90DB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE34A22-F0C5-4A8F-B54B-DE760E90DB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE34A22-F0C5-4A8F-B54B-DE760E90DB61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,7 +10,7 @@ namespace LargerThanHundred
     {
         static void Main(string[] args)
         {
-            var number = 0;
+            int number;
             do
             {
                 Console.Write("Insert number: ");
