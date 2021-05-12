@@ -10,6 +10,39 @@ namespace MariSiPari
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Introduceti un numar natural: ");
+            int numar = Convert.ToInt32(Console.ReadLine());
+
+            // Console.WriteLine(string.Format("Introduceti cele {0} numere naturale:", numar));
+
+            Console.WriteLine($"Introduceti cele {numar} numere naturale:");
+            int max = int.MinValue;
+            int j = 0;
+
+            for (int i = 0; i < numar; i++)
+            {
+                Console.WriteLine("Introduceti un numar natural: ");
+                int altnumar = Convert.ToInt32(Console.ReadLine());
+
+                if (altnumar % 2 == 0)
+                {
+                    if (altnumar > max)
+                    {
+                        max = altnumar;
+                        j=1;
+                    }
+                    else if ( altnumar == max) {
+                        j++;
+                    }
+                }
+
+            }
+
+            Console.WriteLine($"Maximul este: {max}");
+            Console.WriteLine($"Numarul lui de aparitii este: {j}");
+
+            Console.ReadLine();
+
         }
     }
 }
