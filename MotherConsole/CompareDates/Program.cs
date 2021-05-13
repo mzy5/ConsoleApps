@@ -37,7 +37,7 @@ namespace CompareDates
 
             var secondDay = new DateTime(year2, month2, day2);
 
-            if (DateTime.Now - firstDay < DateTime.Now - secondDay)
+            if (firstDay > secondDay)
             {
                 Console.WriteLine($"{firstDay} is a more recent date");
             }

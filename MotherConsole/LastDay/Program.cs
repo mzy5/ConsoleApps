@@ -19,6 +19,10 @@ namespace LastDay
             Console.WriteLine("Insert year: ");
             var year = Convert.ToInt32(Console.ReadLine());
 
+            // varianta 2
+            //var firstDayOfNextMonth = new DateTime(year, month + 1, 1);
+            //var lastDayOfGivenMonth = firstDayOfNextMonth.AddDays(-1);
+
             var lastDay = DateTime.DaysInMonth(year, month);
 
             var lastWeekDay = new DateTime(year, month, lastDay);

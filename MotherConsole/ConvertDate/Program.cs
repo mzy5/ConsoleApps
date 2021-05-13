@@ -28,7 +28,7 @@ namespace ConvertDate
             var longTime = date.ToLongTimeString();
             Console.WriteLine($"Long time: {longTime}");
 
-            CultureInfo culture = new CultureInfo("pt-BR");
+            CultureInfo culture = new CultureInfo("ja-JP");
             var culturePTdate = date.ToString("d", culture);
             Console.WriteLine($"PT culture time: {culturePTdate}");
 
