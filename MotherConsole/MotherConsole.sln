@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertDate", "ConvertDate\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsVoc", "ConsVoc\ConsVoc.csproj", "{DE23EF9C-74B7-44FB-BB4C-D67E7271BBC3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invers", "Invers\Invers.csproj", "{EE67881E-6843-4087-A1C0-20C1869CF494}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{DE23EF9C-74B7-44FB-BB4C-D67E7271BBC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE23EF9C-74B7-44FB-BB4C-D67E7271BBC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE23EF9C-74B7-44FB-BB4C-D67E7271BBC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE67881E-6843-4087-A1C0-20C1869CF494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE67881E-6843-4087-A1C0-20C1869CF494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE67881E-6843-4087-A1C0-20C1869CF494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE67881E-6843-4087-A1C0-20C1869CF494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
