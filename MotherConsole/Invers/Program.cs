@@ -12,19 +12,51 @@ namespace Invers
         {
             Console.WriteLine("Insert word to mirror: ");
             string word = Console.ReadLine();
+            //var arr = word.ToCharArray();
+            //var reversedArr = new Char[arr.Length];
 
-            int i = 0; // first element of the reversed part
-            int j = word.Length - 1; // last element of the reversed part
 
-            while (i < j)
+
+            //int j = 0;
+
+            //for (int i = arr.Length -1 ; i >= 0; i--)
+            //{
+            //    reversedArr[j] = arr[i];
+            //    j++;
+            //}
+
+
+
+            ////var result = new string(reversedArr);
+            //Console.WriteLine(reversedArr);
+
+            //Console.ReadLine();
+
+
+            string result = "";
+
+            for (int i = word.Length - 1; i >=0; i--)
             {
-                var temp = word[i];
-                word[i] = word[j];
-                word[j] = temp;
-
-                i++;
-                j--;
+                result = result + word[i];
             }
+
+            Console.WriteLine(result);
+
+
+            //var arr = word.ToCharArray();
+
+            //int i = 0; // first element of the reversed part
+            //int j = word.Length - 1; // last element of the reversed part
+
+            //while (i < j)
+            //{
+            //    var temp = arr[i];
+            //    arr[i] = arr[j];
+            //    arr[j] = temp;
+
+            //    i++;
+            //    j--;
+            //}
         }
     }
 }
