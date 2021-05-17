@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsVoc", "ConsVoc\ConsVoc.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invers", "Invers\Invers.csproj", "{EE67881E-6843-4087-A1C0-20C1869CF494}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrom", "Palindrom\Palindrom.csproj", "{DE6D8624-C87F-43C5-83CA-DBA507558E48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{EE67881E-6843-4087-A1C0-20C1869CF494}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE67881E-6843-4087-A1C0-20C1869CF494}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE67881E-6843-4087-A1C0-20C1869CF494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6D8624-C87F-43C5-83CA-DBA507558E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6D8624-C87F-43C5-83CA-DBA507558E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6D8624-C87F-43C5-83CA-DBA507558E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6D8624-C87F-43C5-83CA-DBA507558E48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
