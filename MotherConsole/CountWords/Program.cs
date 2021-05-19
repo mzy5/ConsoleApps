@@ -13,12 +13,14 @@ namespace CountWords
             Console.WriteLine("Insert text: ");
             string text = Console.ReadLine();
 
-            char empty = ' ';
+            text = text.Trim();
+
+            char space = ' ';
             int counter = 1;
 
-            for (int i = 0; i < text.Length; i++)
+            for (int i = 0; i < text.Length-1; i++)
             {
-                if (text[i] == empty && text[i+1] != empty)
+                if (text[i] == space && text[i+1] != space)
                 {
                     counter++;
                 }
