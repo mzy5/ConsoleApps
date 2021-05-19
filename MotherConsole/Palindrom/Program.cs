@@ -12,14 +12,26 @@ namespace Palindrom
         {
             Console.WriteLine("Type in word: ");
             string word = Console.ReadLine();
-            int j = 0;
+            int j = word.Length-1;
+            bool isPalindrome = true;
 
-            for (int i = 0; i <= word.Length-1; i++)
+            for (int i = 0; i <= word.Length/2; i++)
             {
-                if (word[i].Equals(word[word.Length-1]))
+                if (word[i] != word[j])
                 {
-                    j++;
+                   isPalindrome = false;
+                   break;
                 }
+                j--;
+            }
+
+            if (isPalindrome)
+            {
+                Console.WriteLine("The word is a palindrome");
+            }
+            else
+            {
+                Console.WriteLine("The word is not a palindrome");
             }
             Console.ReadLine();
         }
