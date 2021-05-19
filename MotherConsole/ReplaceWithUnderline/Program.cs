@@ -12,17 +12,26 @@ namespace ReplaceWithUnderline
         {
             Console.WriteLine("Insert space separated words: ");
             string textCuSpatii = Console.ReadLine();
-            var arr = textCuSpatii.ToCharArray();
 
-            char empty = ' ';
+            textCuSpatii = textCuSpatii.Trim();
+
+            char space = ' ';
+            string result = "";
 
             for (int i = 0; i < textCuSpatii.Length; i++)
             {
-                if(textCuSpatii[i] == empty)
+                if(textCuSpatii[i] != space)
                 {
-                    arr[i] = '_'; // wip
+                    result = result + textCuSpatii[i];
+                }
+                else
+                {
+                    result = result + "_";
                 }
             }
+            Console.WriteLine(result);
+
+            Console.ReadLine();
         }
     }
 }
