@@ -16,20 +16,40 @@ namespace ToUpper
             textToUpper = textToUpper.Trim();
 
             char space = ' ';
-            string result = "";
 
-            for (int i = 0; i < textToUpper.Length - 1; i++)
+            string result = char.ToUpper(textToUpper[0]).ToString();
+
+            for (int i = 1; i < textToUpper.Length; i++)
             {
-                if (textToUpper[i] == space && textToUpper[i + 1] != space)
+                if (textToUpper[i] != space && textToUpper[i - 1] == space)
                 {
-                    var upped = textToUpper[i+1];
+                    var upped = textToUpper[i];
                     result = result + char.ToUpper(upped);
                 }
-                else 
+                else
                 {
                     result = result + textToUpper[i];
                 }
             }
+
+
+            //string result = "";
+
+            //for (int i = 0; i < textToUpper.Length; i++)
+            //{
+
+            //    if (i == 0 || (textToUpper[i] != space && textToUpper[i - 1] == space))
+            //    {
+            //        var upped = textToUpper[i];
+            //        result = result + char.ToUpper(upped);
+            //    }
+            //    else
+            //    {
+            //        result = result + textToUpper[i];
+            //    }
+
+            //}
+
             Console.WriteLine(result);
 
             Console.ReadLine();
