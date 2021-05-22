@@ -27,22 +27,34 @@ namespace Meniu15
 
             char selectedOption = Console.ReadKey().KeyChar;
 
-            if (selectedOption == '1' || selectedOption == '2' || selectedOption == '3' || selectedOption == '4' || selectedOption == '5')
-            {
-                // Console.WriteLine(selectedOption);
-                Console.Clear();
-
-                char selectedChar = Console.ReadKey().KeyChar;
-                Console.WriteLine("Do you want to go back? Press Y or N");
-                if (selectedChar == 'y' || selectedChar == 'Y')
+            do { 
+                if (selectedOption == '1' || selectedOption == '2' || selectedOption == '3' || selectedOption == '4' || selectedOption == '5')
                 {
+                    // Console.WriteLine(selectedOption);
+                    Console.Clear();
+
+                    Console.WriteLine("Do you want to go back? Press Y or N");
+
+                    char selectedChar = Console.ReadKey().KeyChar;
+                    if (selectedChar == 'y' || selectedChar == 'Y')
+                    {
+                        Console.Clear();
+                        Menu();
+                    }
+                    else if (selectedChar == 'n' || selectedChar == 'N')
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Nein? kay, bye!");
+                        Console.WriteLine("Press any key to close the console. ");
+                        Console.ReadKey();
+                    }
+                } else
+                {
+
+                    Console.WriteLine("\r\n");
                     Menu();
                 }
-                else if (selectedChar == 'n' || selectedChar == 'N')
-                {
-                   //???
-                }
-            }
+            } while (selectedOption != ' ');
 
             Console.ReadLine();
         }
