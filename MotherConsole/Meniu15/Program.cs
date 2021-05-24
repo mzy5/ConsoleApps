@@ -8,7 +8,7 @@ namespace Meniu15
 {
     class Program
     {
-        public static void Menu()
+        public static char Menu()
         {
             Console.WriteLine("Type an option's number and face its consequences: ");
             Console.WriteLine("1st");
@@ -16,18 +16,23 @@ namespace Meniu15
             Console.WriteLine("3rd");
             Console.WriteLine("4th");
             Console.WriteLine("5th");
+
+            char selectedOption = Console.ReadKey().KeyChar;
+
+            return selectedOption;
         }
         static void Main(string[] args)
         {
             // Sa se afiseze un meniul in consola cu optiuni de la 1 la 5.
             // La alegerea fiecarei optiuni din meniu, programul trebuie sa stearga ecranul, 
             // apoi sa afiseze un mesaj si sa ofere posibilitatea de a te intoarce la meniul initial.
+            // do some individual menus for each selected options, for eg, ATM
 
-            Menu();
+            char selectedOption;
 
-            char selectedOption = Console.ReadKey().KeyChar;
+            do {
+                selectedOption = Menu();
 
-            do { 
                 if (selectedOption == '1' || selectedOption == '2' || selectedOption == '3' || selectedOption == '4' || selectedOption == '5')
                 {
                     // Console.WriteLine(selectedOption);
@@ -39,7 +44,6 @@ namespace Meniu15
                     if (selectedChar == 'y' || selectedChar == 'Y')
                     {
                         Console.Clear();
-                        Menu();
                     }
                     else if (selectedChar == 'n' || selectedChar == 'N')
                     {
@@ -47,16 +51,14 @@ namespace Meniu15
                         Console.WriteLine("Nein? kay, bye!");
                         Console.WriteLine("Press any key to close the console. ");
                         Console.ReadKey();
+                        break;
                     }
                 } else
                 {
 
-                    Console.WriteLine("\r\n");
-                    Menu();
+                    Console.WriteLine("Invalid option");
                 }
-            } while (selectedOption != ' ');
-
-            Console.ReadLine();
+            } while (selectedOption != 'x');
         }
     }
 }
