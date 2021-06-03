@@ -51,7 +51,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToUpper", "ToUpper\ToUpper.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meniu15", "Meniu15\Meniu15.csproj", "{C5CADC6B-684E-4323-9187-46DDD785D429}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseArray", "ReverseArray\ReverseArray.csproj", "{162C30CF-8C4A-4DE7-A43E-D98D1DDBA287}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Arrays", "ReverseArray\Arrays.csproj", "{162C30CF-8C4A-4DE7-A43E-D98D1DDBA287}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
