@@ -72,7 +72,7 @@ namespace Arrays
 
 
             //delete the element on position p
-            Console.WriteLine("Insert the position you want to delete the element from: ");
+            Console.WriteLine("\nInsert the position you want to delete the element from: ");
             int position = Convert.ToInt32(Console.ReadLine());
             int[] shorterArray = new int[arrayOfNumbers.Length - 1];
             int index = 0;
@@ -87,14 +87,22 @@ namespace Arrays
                 {
                     shorterArray[position] = arrayOfNumbers[position + 1];
                     position++;
+                    index++;
                 }
             }
 
-            Console.WriteLine("$The array, after removing the item from the {position} is: ");
-            for (int q = 0; q < arrayOfNumbers.Length; q++)
+            Console.WriteLine($"The array, after removing the item from the position {position} is: ");
+            for (int q = 0; q < shorterArray.Length; q++)
             {
-                Console.Write(arrayOfNumbers[q]);
+                Console.Write(shorterArray[q]);
             }
+
+            //insert an element on a position
+            Console.WriteLine("\nInsert the position you want to insert the element to: ");
+            int positionToInsert = Convert.ToInt32(Console.ReadLine());
+            int[] longerArray = new int[arrayOfNumbers.Length + 1];
+
+
 
             Console.ReadKey();
         }
