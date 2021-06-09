@@ -8,7 +8,7 @@ namespace Arrays
         {
             int[] arrayOfNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
 
-            for (int i=arrayOfNumbers.Length -1 ; i >=0 ; i--)
+            for (int i = arrayOfNumbers.Length - 1; i >= 0; i--)
             {
                 Console.Write(arrayOfNumbers[i] + " ");
             }
@@ -17,7 +17,7 @@ namespace Arrays
             int numberOfOddNumbers = 0;
             for (int l = 0; l < arrayOfNumbers.Length; l++)
             {
-                if(arrayOfNumbers[l] % 2 != 0)
+                if (arrayOfNumbers[l] % 2 != 0)
                 {
                     numberOfOddNumbers++;
                 }
@@ -26,7 +26,7 @@ namespace Arrays
 
             //display items on even and odd positions
             Console.WriteLine("The numbers on the even positions are: ");
-            for (int m = 0; m < arrayOfNumbers.Length; m +=2)
+            for (int m = 0; m < arrayOfNumbers.Length; m += 2)
             {
                 if (m % 2 == 0)
                 {
@@ -34,7 +34,7 @@ namespace Arrays
                 }
             }
             Console.WriteLine("\nThe numbers on the odd positions are: ");
-            for (int n = 1; n < arrayOfNumbers.Length; n+=2)
+            for (int n = 1; n < arrayOfNumbers.Length; n += 2)
             {
                 if (n % 2 != 0)
                 {
@@ -77,7 +77,7 @@ namespace Arrays
             int[] shorterArray = new int[arrayOfNumbers.Length - 1];
             int index = 0;
 
-            while (position < arrayOfNumbers.Length - 1)
+            while (index < arrayOfNumbers.Length - 1)
             {
                 if (index < position)
                 {
@@ -85,8 +85,7 @@ namespace Arrays
                     index++;
                 }else
                 {
-                    shorterArray[position] = arrayOfNumbers[position + 1];
-                    position++;
+                    shorterArray[index] = arrayOfNumbers[index + 1];
                     index++;
                 }
             }
@@ -97,7 +96,7 @@ namespace Arrays
                 Console.Write(shorterArray[q]);
             }
 
-            //insert an element on a position
+            ////insert an element on a position
             Console.WriteLine("\nInsert the position you want to insert the element to: ");
             int positionToInsert = Convert.ToInt32(Console.ReadLine());
             int[] longerArray = new int[arrayOfNumbers.Length + 1];
