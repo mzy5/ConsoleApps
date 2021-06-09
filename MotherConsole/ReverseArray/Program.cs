@@ -96,12 +96,44 @@ namespace Arrays
                 Console.Write(shorterArray[q]);
             }
 
-            ////insert an element on a position
-            Console.WriteLine("\nInsert the position you want to insert the element to: ");
+            //insert an element on a position
+            Console.WriteLine("\nInsert the item you want to insert: ");
+            int itemToInsert = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Insert the position you want to insert the element to: ");
             int positionToInsert = Convert.ToInt32(Console.ReadLine());
             int[] longerArray = new int[arrayOfNumbers.Length + 1];
+            int indexToo = 0;
 
-
+            
+            while (indexToo < arrayOfNumbers.Length - 1)
+            {
+                if (indexToo == positionToInsert)
+                {
+                    longerArray[indexToo] = itemToInsert;
+                    longerArray[indexToo + 1] = arrayOfNumbers[indexToo];
+                    indexToo++;
+                    
+                }else if (indexToo < positionToInsert)
+                {
+                    longerArray[indexToo] = arrayOfNumbers[indexToo];
+                    indexToo++;
+                }
+                else
+                {
+                    longerArray[indexToo + 1] = arrayOfNumbers[indexToo];
+                    indexToo++;
+                }
+                //else
+                //{
+                //    longerArray[indexToo] = arrayOfNumbers[indexToo + 1];
+                //    indexToo++;
+                //}
+            }
+            Console.WriteLine($"The array, after adding {itemToInsert} on the position {positionToInsert} is: ");
+            for (int r = 0; r < longerArray.Length; r++)
+            {
+                Console.Write(longerArray[r]);
+            }
 
             Console.ReadKey();
         }
