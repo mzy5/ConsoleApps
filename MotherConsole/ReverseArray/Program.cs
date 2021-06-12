@@ -6,7 +6,10 @@ namespace Arrays
     {
         static void Main(string[] args)
         {
-            int[] arrayOfNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+            // int[] arrayOfNumbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0 };
+            // int[] arrayOfNumbers = { 10, 10, 10, 10, 10, 10, 10};
+
+            int[] arrayOfNumbers = { 8, 6, 9, 3, 2, 4, 1, 5, 7 };
 
             for (int i = arrayOfNumbers.Length - 1; i >= 0; i--)
             {
@@ -83,7 +86,8 @@ namespace Arrays
                 {
                     shorterArray[index] = arrayOfNumbers[index];
                     index++;
-                }else
+                }
+                else
                 {
                     shorterArray[index] = arrayOfNumbers[index + 1];
                     index++;
@@ -96,7 +100,7 @@ namespace Arrays
                 Console.Write(shorterArray[q]);
             }
 
-            //insert an element on a position
+            //insert an element on a position ???
             Console.WriteLine("\nInsert the item you want to insert: ");
             int itemToInsert = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Insert the position you want to insert the element to: ");
@@ -104,7 +108,7 @@ namespace Arrays
             int[] longerArray = new int[arrayOfNumbers.Length + 1];
             int indexToo = 0;
 
-            
+
             while (indexToo < arrayOfNumbers.Length - 1)
             {
                 if (indexToo == positionToInsert)
@@ -112,8 +116,9 @@ namespace Arrays
                     longerArray[indexToo] = itemToInsert;
                     longerArray[indexToo + 1] = arrayOfNumbers[indexToo];
                     indexToo++;
-                    
-                }else if (indexToo < positionToInsert)
+
+                }
+                else if (indexToo < positionToInsert)
                 {
                     longerArray[indexToo] = arrayOfNumbers[indexToo];
                     indexToo++;
@@ -129,15 +134,76 @@ namespace Arrays
                 //    indexToo++;
                 //}
             }
-            Console.WriteLine($"The array, after adding {itemToInsert} on the position {positionToInsert} is: ");
+            Console.WriteLine($"\nThe array, after adding {itemToInsert} on the position {positionToInsert} is: ");
             for (int r = 0; r < longerArray.Length; r++)
             {
                 Console.Write(longerArray[r]);
             }
 
+            //check if all array's elements are equal
+            int counter = 0;
+            for (int s = 0; s < arrayOfNumbers.Length - 1; s++)
+            {
+                if (arrayOfNumbers[s] == arrayOfNumbers[s + 1])
+                {
+                    counter++;
+                }
+                else
+                {
+                    Console.WriteLine("\nIt turns out, the array's elements are not equal.");
+                    break;
+                }
+            }
+            if (counter == arrayOfNumbers.Length - 1)
+            {
+                Console.WriteLine("\nAll of the array's elements are equal");
+            }
+
+            BubbleSort(arrayOfNumbers, arrayOfNumbers.Length);
+
+            //compare 2 vectors
+            int count = 0;
+            for (int i = 0; i < arrayOfNumbers.Length; i++)
+            {
+                for (int j = 0; j < shorterArray.Length; j++)
+                {
+                    if(arrayOfNumbers[i] != shorterArray[j])
+                    {
+                        Console.WriteLine("The 2 arrays are distinct. ");
+                        break;
+                    }
+                    else
+                    {
+                        count++;
+                    }
+                }
+            }
+            Console.WriteLine($"\nThe 2 arrays have {count} items in common.");
+
             Console.ReadKey();
         }
 
-        
+        private static void BubbleSort(int[] array, int n)
+        {
+            int i, j, temp;
+            for (i = 0; i < n; i++)
+            {
+                for (j = 0; j < n - i - 1; j++)
+                {
+                    if (array[j] > array[j + 1])
+                    {
+                        // swap the elements
+                        temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
+                    }
+                }
+            }
+            Console.WriteLine("\nThe bubble sorted array looks like this: ");
+            for (i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i]);
+            }
+        }
     }
 }
