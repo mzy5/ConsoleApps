@@ -109,7 +109,7 @@ namespace Arrays
             int indexToo = 0;
 
 
-            while (indexToo < arrayOfNumbers.Length - 1)
+            while (indexToo < arrayOfNumbers.Length )
             {
                 if (indexToo == positionToInsert)
                 {
