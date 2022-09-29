@@ -8,6 +8,7 @@ namespace Fibo
 {
     class Program
     {
+        //check the position in the Fibonacci list for the number inserted from keyboard
         public static int Fibo(int n)
         {
             if (n == 0)
